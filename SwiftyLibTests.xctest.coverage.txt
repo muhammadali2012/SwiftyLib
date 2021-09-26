@@ -1,0 +1,42 @@
+    1|       |//
+    2|       |//  SwiftyLibTests.swift
+    3|       |//  SwiftyLibTests
+    4|       |//
+    5|       |//  Created by Muhammad Ali on 26/09/2021.
+    6|       |//
+    7|       |
+    8|       |import XCTest
+    9|       |@testable import SwiftyLib
+   10|       |
+   11|       |class SwiftyLibTests: XCTestCase {
+   12|       |    var swiftLib: SwiftyLib!
+   13|       |
+   14|      4|    override func setUpWithError() throws {
+   15|      4|        // Put setup code here. This method is called before the invocation of each test method in the class.
+   16|      4|        swiftLib = SwiftyLib()
+   17|      4|    }
+   18|      1|    func testAdd(){
+   19|      1|        XCTAssertEqual(swiftLib.add(a: 1, b: 1), 2)
+   20|      1|    }
+   21|      1|    func testSub() {
+   22|      1|        XCTAssertEqual(swiftLib.sub(a: 2, b: 1), 1)
+   23|      1|    }
+   24|       |
+   25|      4|    override func tearDownWithError() throws {
+   26|      4|        // Put teardown code here. This method is called after the invocation of each test method in the class.
+   27|      4|    }
+   28|       |
+   29|      1|    func testExample() throws {
+   30|      1|        // This is an example of a functional test case.
+   31|      1|        // Use XCTAssert and related functions to verify your tests produce the correct results.
+   32|      1|    }
+   33|       |
+   34|      1|    func testPerformanceExample() throws {
+   35|      1|        // This is an example of a performance test case.
+   36|     10|        self.measure {
+   37|     10|            // Put the code you want to measure the time of here.
+   38|     10|        }
+   39|      1|    }
+   40|       |
+   41|       |}
+
