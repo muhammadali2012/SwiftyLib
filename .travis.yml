@@ -8,5 +8,4 @@ env:
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project SwiftyLib.xcodeproj -scheme SwiftyLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t {5c8f6a62-7448-4f08-b932-5dcb00358f77}
+after_success: slather
