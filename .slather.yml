@@ -1,6 +1,5 @@
-coverage_service: cobertura_xml
+coverage_service: coveralls
 xcodeproj: SwiftyLib.xcodeproj
 scheme: SwiftyLib
-output_directory: reports
 ignore:
-  - SwiftyLibTests/*
+  - SwiftyLibExamples/*
