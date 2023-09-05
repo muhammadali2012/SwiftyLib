@@ -8,3 +8,5 @@ Things done so far are
 -> addding read me file, 
 -> then an MIT lisence will be adede 
 -> Done
+-> Checking git hub configuration with mutliple accounts in git
+
